@@ -19,6 +19,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+import sphinx_bootstrap_theme
 
 # -- General configuration ------------------------------------------------
 
@@ -34,7 +35,10 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.githubpages',
+    'sphinx.ext.bootstrap',
 ]
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
