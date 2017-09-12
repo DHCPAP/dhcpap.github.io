@@ -32,6 +32,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="DHCPAP 0.1 documentation" href="#" />
+    <link rel="next" title="Glosary" href="glossary.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -66,7 +67,11 @@
      href="#">Site <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"></ul>
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">Links</a></li>
+</ul>
+</ul>
 </li>
               
                 <li class="dropdown">
@@ -78,8 +83,14 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Welcome to DHCPAP&#8217;s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#">Welcome to DHCPAP&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#dh-what">DH-What?!</a></li>
+<li><a class="reference internal" href="#for-users">For users</a></li>
+<li><a class="reference internal" href="#for-educational-purposes">For educational purposes</a></li>
+<li><a class="reference internal" href="#for-developers">For developers</a></li>
+<li><a class="reference internal" href="#others">Others</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -88,6 +99,10 @@
             
               
                 
+  <li>
+    <a href="glossary.html" title="Next Chapter: Glosary"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Glosary &raquo;</span>
+    </a>
+  </li>
               
             
             
@@ -121,17 +136,69 @@
       
   <div class="section" id="welcome-to-dhcpap-s-documentation">
 <h1>Welcome to DHCPAP&#8217;s documentation!<a class="headerlink" href="#welcome-to-dhcpap-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Contents:</p>
-<div class="toctree-wrapper compound">
+<div class="section" id="dh-what">
+<h2>DH-What?!<a class="headerlink" href="#dh-what" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/DHCP">DHCP</a> stands for
+<strong>Dynamic Host Configuration Protocol</strong>. It&#8217;s a
+<a class="reference external" href="https://en.wikipedia.org/wiki/Network_protocol">network protocol</a> used to
+get network configuration parameters, such as
+<a class="reference external" href="https://en.wikipedia.org/wiki/IP_address">IP addresses</a> automatically.</p>
+<p>Every time a device, such as a laptop or mobile connects to a Wifi
+network in a cafe, office, home, etc., it send a DHCP request.</p>
+<p>Some DHCP options carry unique identifiers that can enable device tracking and
+fingerprinting.</p>
+<p><strong>AP</strong> stands for <a class="reference external" href="https://tools.ietf.org/html/rfc7844.html">Anonymity Profiles</a>,
+an standard that provide guidelines on the composition of DHCP messages,
+designed to minimize disclosure of identifying information.</p>
+<p><strong>Important</strong>: if you run a DHCP client implementing the Anonymity Profiles, the
+hardware address (<a class="reference external" href="https://en.wikipedia.org/wiki/MAC_address">MAC</a>) should
+be randomized.</p>
 </div>
+<div class="section" id="for-users">
+<h2>For users<a class="headerlink" href="#for-users" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://dhcpcanon.readthedocs.io/">dhcpcanon</a> is a DHCP client implementing
+the Anonymity Profiles.</p>
+<p>It&#8217;s tested in Debian/Ubuntu, other Linux distributions coming soon, as well as
+Gnome Network Manager integration.</p>
+<p>Windows 10 has a privative implementation of the Anonymity Profiles.</p>
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="for-educational-purposes">
+<h2>For educational purposes<a class="headerlink" href="#for-educational-purposes" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://dhcpcfp.readthedocs.io/">dhcpcfp</a> is a DHCP scanner,
+intended to be run in controlled networks to show how is possible to
+fingerprint devices.</p>
+</div>
+<div class="section" id="for-developers">
+<h2>For developers<a class="headerlink" href="#for-developers" title="Permalink to this headline">¶</a></h2>
+<p>(Look the two sections above).</p>
+<p><code class="docutils literal"><span class="pre">systemd</span></code> implements its own DHCP client and now it also implements the
+Anonymity profiles (<a class="reference external" href="https://github.com/juga0/systemd/tree/features/rfc7844">branch</a>
+merged in upstream).
+Refer to the documentation on how to run systemd DHCP client and
+<a class="reference external" href="http://systemd-dhcpap-notes.readthedocs.io">systemd modifications</a>
+(<a class="reference external" href="https://github.com/juga0/systemd">source</a>)</p>
+<p><a class="reference external" href="https://rfc7844-comments.readthedocs.io">Comments on the RFC 7844</a>
+(<a class="reference external" href="https://github.com/juga0/rfc7844-comments">source</a>)</p>
+<p>Slides:</p>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference external" href="https://dhcpap.github.io/dhcpap_hax_slides/">Bornhack slides</a>
+(<a class="reference external" href="https://github.com/DHCPAP/dhcpap_hax_slides">source</a>)</li>
+<li><a class="reference external" href="https://dhcpap.github.io/dhcpcanon_p_slides/">PrototypeFund slides</a>
+(<a class="reference external" href="https://github.com/DHCPAP/dhcpcanon_p_slides">source</a>)</li>
+</ul>
+</div>
+<div class="section" id="others">
+<h2>Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">Links</a></li>
+</ul>
+</div>
+<ul class="simple">
 <li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
+</div>
 </div>
 
 
