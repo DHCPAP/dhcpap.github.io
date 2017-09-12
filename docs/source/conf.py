@@ -429,3 +429,12 @@ epub_exclude_files = ['search.html']
 # If false, no index is generated.
 #
 # epub_use_index = True
+
+intersphinx_mapping = {
+    'dhcpcanon': ('https://dhcpcanon.readthedocs.io/', 'dhcpcanon-inv.txt'),
+    'systemd-dhcpap':
+        ('https://dhcpcanon.readthedocs.io/', 'systemd-dhcpap-inv.txt'),
+    'rfc7844-comments':
+        ('https://dhcpcanon.readthedocs.io/', 'rfc7844-comments-inv.txt'),
+    'dhcpcfp': ('https://dhcpcanon.readthedocs.io/', 'dhcpcfp-inv.txt')
+    }
