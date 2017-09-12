@@ -3,6 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
+.. image:: ./images/dhcpcanon.*
+    :scale: 50%
+
 Welcome to DHCPAP's documentation!
 ==================================
 
@@ -28,7 +32,7 @@ designed to minimize disclosure of identifying information.
 **Important**: if you run a DHCP client implementing the Anonymity Profiles, the
 hardware address (`MAC <https://en.wikipedia.org/wiki/MAC_address>`__) should
 be randomized.
-You can use `macchanger <https://github.com/alobbs/macchanger>`__, 
+You can use `macchanger <https://github.com/alobbs/macchanger>`__,
 `macouflage <https://github.com/subgraph/macouflage>`__ or other.
 
 For users
