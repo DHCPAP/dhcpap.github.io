@@ -20,20 +20,20 @@ get network configuration parameters, such as
 `IP addresses <https://en.wikipedia.org/wiki/IP_address>`__ automatically.
 
 Every time a device, such as a laptop or mobile connects to a Wifi
-network in a cafe, office, home, etc., it send a DHCP request.
+network in a cafe, office, home, etc., it sends a DHCP request.
 
 Some DHCP options carry unique identifiers that can enable device tracking and
 fingerprinting.
 
 **AP** stands for `Anonymity Profiles <https://tools.ietf.org/html/rfc7844.html>`__,
-an standard that provide guidelines on the composition of DHCP messages,
+a standard that provides guidelines on the composition of DHCP messages,
 designed to minimize disclosure of identifying information.
 
 **Important**: if you run a DHCP client implementing the Anonymity Profiles, the
 hardware address (`MAC <https://en.wikipedia.org/wiki/MAC_address>`__) should
 be randomized.
 You can use `macchanger <https://github.com/alobbs/macchanger>`__,
-`macouflage <https://github.com/subgraph/macouflage>`__ or other.
+`macouflage <https://github.com/subgraph/macouflage>`__ or other tools for this.
 
 For users
 ----------
@@ -41,22 +41,23 @@ For users
 `dhcpcanon <https://dhcpcanon.readthedocs.io/>`__ is a DHCP client implementing
 the Anonymity Profiles.
 
-It's tested in Debian/Ubuntu, other Linux distributions coming soon, as well as
+It's tested in Debian/Ubuntu. Other Linux distributions are coming soon, as well as
 Gnome Network Manager integration.
 
-Windows 10 has a privative implementation of the Anonymity Profiles.
+Windows 10 has a non-`FLOSS <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__
+implementation of the Anonymity Profiles.
 
 For educational purposes
 ------------------------
 
 `dhcpcfp <https://dhcpcfp.readthedocs.io/>`__ is a DHCP scanner,
-intended to be run in controlled networks to show how is possible to
+intended to be run in controlled networks to show how it is possible to
 fingerprint devices.
 
 For developers
 ---------------
 
-(Look the two sections above).
+(See the two sections above).
 
 ``systemd`` implements its own DHCP client and now it also implements the
 Anonymity profiles (`branch <https://github.com/juga0/systemd/tree/features/rfc7844>`__
@@ -75,7 +76,7 @@ Slides:
 * `PrototypeFund slides <https://dhcpap.github.io/dhcpcanon_p_slides/>`__
   (`source <https://github.com/DHCPAP/dhcpcanon_p_slides>`__)
 
-Others
+Other
 --------
 
 .. toctree::
