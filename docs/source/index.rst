@@ -71,6 +71,8 @@ Refer to the documentation on how to run systemd DHCP client and
 
 Slides:
 
+* `34c3 slides <https://juga0.github.io/dhcpap_34c3_slides/>`__
+  (`source <https://github.com/juga0/dhcpap_34c3_slides/>`__)
 * `Bornhack slides <https://dhcpap.github.io/dhcpap_hax_slides/>`__
   (`source <https://github.com/DHCPAP/dhcpap_hax_slides>`__)
 * `PrototypeFund slides <https://dhcpap.github.io/dhcpcanon_p_slides/>`__
