@@ -47,8 +47,8 @@ Gnome Network Manager integration.
 Windows 10 has a non-`FLOSS <https://en.wikipedia.org/wiki/Free_and_open-source_software>`__
 implementation of the Anonymity Profiles.
 
-For educational purposes
-------------------------
+For demonstration purposes
+---------------------------
 
 `dhcpcfp <https://dhcpcfp.readthedocs.io/>`__ is a DHCP scanner,
 intended to be run in controlled networks to show how it is possible to
