@@ -4,11 +4,8 @@
    contain the root `toctree` directive.
 
 
-.. image:: ./images/dhcpcanon.*
-    :scale: 50%
-
-Welcome to DHCPAP's documentation!
-==================================
+DHCPAP documentation
+=====================
 
 DH-What?!
 ----------
