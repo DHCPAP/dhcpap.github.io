@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'DHCPAP'
-copyright = u'2017, juga'
+copyright = u'2017, 2018, juga'
 author = u'juga'
 
 # The version info for the project you're documenting, acts as replacement for
